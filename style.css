@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: background-color 0.5s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Hover Effect */
+.hover-box {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Tabs */
+#tabs {
+    margin-top: 1rem;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+/* Image Gallery */
+#imageGallery {
+    text-align: center;
+    position: relative;
+    max-width: 600px; /* Set a fixed width for the gallery */
+    margin: 0 auto; /* Center the gallery */
+}
+
+#imageGallery img {
+    max-width: 100%; /* Ensures the image does not exceed the container width */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Centers the image within its container */
+    margin: 0 auto;  /* Centers the image horizontally */
+}
+
+.image-container {
+    width: 100%;
+    height: 400px; /* Set a fixed height for the gallery */
+    overflow: hidden; /* Ensure images don't overflow the container */
+    position: relative;
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image fits the container width */
+    height: 100%; /* Ensure the image fits the container height */
+    object-fit: cover; /* Crop the image to fit the container while maintaining aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Start with the image hidden */
+    transition: opacity 0.5s ease; /* Smooth fade-in/out effect */
+}
+
+.image-container img.visible {
+    opacity: 1; /* Show the image when it has the "visible" class */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+}

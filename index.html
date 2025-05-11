@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎯 JavaScript Event Handling & Interactive Elements</h1>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section id="event-handling">
+            <h2>Event Handling 🎈</h2>
+            <button id="interactiveButton">Click Me!</button>
+            <div id="hoverEffect" class="hover-box">Hover over me!</div>
+            <input type="text" id="keypressInput" placeholder="Type something...">
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements 🎮</h2>
+            <button id="colorChangeButton">Change My Color</button>
+            <div id="imageGallery">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300" alt="Gallery Image" id="galleryImage">
+                </div>
+                <button id="prevImage">Previous</button>
+                <button id="nextImage">Next</button>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-validation">
+            <h2>Form Validation 📋✅</h2>
+            <form id="myForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required minlength="8">
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formFeedback"></p>
+        </section>
+
+        <!-- Accordion Section -->
+        <section id="accordion-section">
+            <h2>Accordion-Style Content 📂</h2>
+            <div class="accordion">
+                <button class="accordion-header">Section 1</button>
+                <div class="accordion-content">
+                    <p>This is the content for Section 1. It is hidden by default and shown when the header is clicked.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">Section 2</button>
+                <div class="accordion-content">
+                    <p>This is the content for Section 2. It is hidden by default and shown when the header is clicked.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-header">Section 3</button>
+                <div class="accordion-content">
+                    <p>This is the content for Section 3. It is hidden by default and shown when the header is clicked.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
